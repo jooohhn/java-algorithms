@@ -1,13 +1,16 @@
 package datastructures;
 
-import org.junit.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class DoublyLinkedListTest {
 	private DoublyLinkedList<Integer> linkedList = new DoublyLinkedList();
+
 	@Before
-	public void beforeEach() throws Exception{
+	public void beforeEach() throws Exception {
 		this.linkedList.insertLast(1);
 		this.linkedList.insertLast(2);
 		this.linkedList.insertLast(3);
@@ -16,7 +19,7 @@ public class DoublyLinkedListTest {
 	}
 
 	@After
-	public void afterEach() throws Exception{
+	public void afterEach() throws Exception {
 		this.linkedList.clear();
 	}
 
@@ -43,28 +46,26 @@ public class DoublyLinkedListTest {
 
 	@Test
 	public void deleteElements() throws Exception {
-		assertEquals(this.linkedList.has(100),false);
+		assertEquals(this.linkedList.has(100), false);
 		assertEquals(this.linkedList.getFirst(), new Integer(1));
 		assertEquals(this.linkedList.getLast(), new Integer(5));
-		assertEquals(this.linkedList.delete(100),false);
-		assertEquals(this.linkedList.delete(1),true);
-		assertEquals(this.linkedList.delete(5),true);
+		assertEquals(this.linkedList.delete(100), false);
+		assertEquals(this.linkedList.delete(1), true);
+		assertEquals(this.linkedList.delete(5), true);
 		assertEquals(this.linkedList.getFirst(), new Integer(2));
 		assertEquals(this.linkedList.getLast(), new Integer(4));
-		assertEquals(this.linkedList.delete(3),true);
-		assertEquals(this.linkedList.delete(2),true);
-		assertEquals(this.linkedList.delete(4),true);
-		try{
+		assertEquals(this.linkedList.delete(3), true);
+		assertEquals(this.linkedList.delete(2), true);
+		assertEquals(this.linkedList.delete(4), true);
+		try {
 			this.linkedList.getFirst();
+		} catch (Exception e) {
+			assertEquals(e.getMessage(), "LinkedList is empty");
 		}
-		catch(Exception e){
-			assertEquals(e.getMessage(),"LinkedList is empty");
-		}
-		try{
+		try {
 			this.linkedList.getLast();
-		}
-		catch(Exception e){
-			assertEquals(e.getMessage(),"LinkedList is empty");
+		} catch (Exception e) {
+			assertEquals(e.getMessage(), "LinkedList is empty");
 		}
 	}
 
@@ -72,11 +73,10 @@ public class DoublyLinkedListTest {
 	public void helperMethods() throws Exception {
 		assertEquals(this.linkedList.has(3), true);
 		this.linkedList.clear();
-		try{
+		try {
 			this.linkedList.getFirst();
-		}
-		catch(Exception e){
-			assertEquals(e.getMessage(),"LinkedList is empty");
+		} catch (Exception e) {
+			assertEquals(e.getMessage(), "LinkedList is empty");
 		}
 	}
 

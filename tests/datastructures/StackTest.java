@@ -8,8 +8,9 @@ import static org.junit.Assert.assertEquals;
 
 public class StackTest {
 	private Stack<Integer> stack = new Stack<>();
+
 	@Before
-	public void beforeEach() throws Exception{
+	public void beforeEach() throws Exception {
 		this.stack.push(1);
 		this.stack.push(2);
 		this.stack.push(3);
@@ -18,7 +19,7 @@ public class StackTest {
 	}
 
 	@After
-	public void afterEach() throws Exception{
+	public void afterEach() throws Exception {
 		this.stack.clear();
 	}
 
@@ -44,17 +45,15 @@ public class StackTest {
 		assertEquals(this.stack.isEmpty(), false);
 		this.stack.clear();
 		assertEquals(this.stack.isEmpty(), true);
-		try{
+		try {
 			this.stack.peek();
+		} catch (Exception e) {
+			assertEquals(e.getMessage(), "Can't peek from an empty stack");
 		}
-		catch(Exception e){
-			assertEquals(e.getMessage(),"Can't peek from an empty stack");
-		}
-		try{
+		try {
 			this.stack.pop();
-		}
-		catch(Exception e){
-			assertEquals(e.getMessage(),"Can't pop from an empty stack");
+		} catch (Exception e) {
+			assertEquals(e.getMessage(), "Can't pop from an empty stack");
 		}
 	}
 

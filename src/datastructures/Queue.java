@@ -8,11 +8,11 @@ public class Queue<T> {
 	 * Adds an element to the back of the queue. Cases are if the list is empty or general case
 	 * O(1)
 	 */
-	public void add(T data){
-		if(this.first == null){
+	public void add(T data) {
+		if (this.first == null) {
 			this.first = new Node<>(data);
 			this.last = this.first;
-		}else{
+		} else {
 			Node<T> newLast = new Node<>(data);
 			this.last.prev = newLast;
 			this.last = newLast;
@@ -23,15 +23,14 @@ public class Queue<T> {
 	 * Removes the element at the front of the queue. Cases:  the list is empty, one element queue, or general case
 	 * O(1)
 	 */
-	public T remove() throws Exception{
-		if(this.first == null)
+	public T remove() throws Exception {
+		if (this.first == null)
 			throw new Exception("Cannot remove from an empty queue");
 		T data = this.first.data;
-		if(this.first == this.last){
+		if (this.first == this.last) {
 			this.first = null;
 			this.last = null;
-		}
-		else{
+		} else {
 			this.first = this.first.prev;
 		}
 		return data;
@@ -41,8 +40,8 @@ public class Queue<T> {
 	 * Removes the element at the front of the queue
 	 * O(1)
 	 */
-	public T peek() throws Exception{
-		if(this.first == null)
+	public T peek() throws Exception {
+		if (this.first == null)
 			throw new Exception("Cannot peek from an empty queue");
 		return this.first.data;
 	}
@@ -56,8 +55,8 @@ public class Queue<T> {
 	}
 
 	/**
-	 *  Clears all contents in the queue
-	 *  O(1)
+	 * Clears all contents in the queue
+	 * O(1)
 	 */
 	public void clear() {
 		this.first = null;
@@ -67,6 +66,7 @@ public class Queue<T> {
 	private class Node<T> {
 		private T data;
 		private Node<T> prev;
+
 		private Node(T data) {
 			this.data = data;
 		}

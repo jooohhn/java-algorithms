@@ -8,8 +8,9 @@ import static org.junit.Assert.assertEquals;
 
 public class QueueTest {
 	private Queue<Integer> queue = new Queue<>();
+
 	@Before
-	public void beforeEach() throws Exception{
+	public void beforeEach() throws Exception {
 		this.queue.add(1);
 		this.queue.add(2);
 		this.queue.add(3);
@@ -18,7 +19,7 @@ public class QueueTest {
 	}
 
 	@After
-	public void afterEach() throws Exception{
+	public void afterEach() throws Exception {
 		this.queue.clear();
 	}
 
@@ -44,17 +45,15 @@ public class QueueTest {
 		assertEquals(this.queue.isEmpty(), false);
 		this.queue.clear();
 		assertEquals(this.queue.isEmpty(), true);
-		try{
+		try {
 			this.queue.peek();
+		} catch (Exception e) {
+			assertEquals(e.getMessage(), "Cannot peek from an empty queue");
 		}
-		catch(Exception e){
-			assertEquals(e.getMessage(),"Cannot peek from an empty queue");
-		}
-		try{
+		try {
 			this.queue.remove();
-		}
-		catch(Exception e){
-			assertEquals(e.getMessage(),"Cannot remove from an empty queue");
+		} catch (Exception e) {
+			assertEquals(e.getMessage(), "Cannot remove from an empty queue");
 		}
 	}
 

@@ -1,6 +1,9 @@
 package sorting;
 
-import java.util.Arrays;
+/**
+ * O(nlgn) time
+ * O(n) space
+ */
 
 public class MergeSort {
 	public static int[] mergeSortRecursive(int[] arr) {
