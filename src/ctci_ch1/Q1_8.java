@@ -10,9 +10,7 @@ package ctci_ch1;
 public class Q1_8 {
 
   /**
-   * Iterate through each element in the matrix
-   * Time: O(n^2)
-   * Space: O(1)
+   * Iterate through each element in the matrix Time: O(n^2) Space: O(1)
    */
   public static int[][] zeroMatrix(int[][] matrix) {
     // Below tables are used to log when certain rows have already been
