@@ -12,4 +12,12 @@ public class HelperFunctions {
     return new Random().nextInt(highest) + lowest;
   }
 
+  public static int[] getRandomIntegerArray(int lowest, int highest, int length) {
+    int[] arr = new int[length];
+    for (int i = 0; i < arr.length; i++) {
+      arr[i] = getRandomIntegerRange(lowest, highest);
+    }
+    return arr;
+  }
+
 }
