@@ -1,0 +1,1 @@
+All class members are public so that the project can utilize class's inherent advantages.

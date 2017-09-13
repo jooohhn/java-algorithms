@@ -1,7 +1,8 @@
 package ctci_ch2;
 
 
-import ctci_ch2.LinkedList.Node;
+import datastructures.LinkedList;
+import datastructures.LinkedList.Node;
 import java.util.HashSet;
 
 /**

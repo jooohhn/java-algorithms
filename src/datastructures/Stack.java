@@ -53,12 +53,12 @@ public class Stack<T> {
     this.top = null;
   }
 
-  private class Node<T> {
+  public class Node<T> {
 
-    private T data;
-    private Node<T> below;
+    public T data;
+    public Node<T> below;
 
-    private Node(T data) {
+    public Node(T data) {
       this.data = data;
     }
   }

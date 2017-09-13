@@ -1,7 +1,7 @@
 package ctci_ch2;
 
-
-import ctci_ch2.LinkedList.Node;
+import datastructures.LinkedList;
+import datastructures.LinkedList.Node;
 
 /**
  * Write code to partition a linked list around a value x, such that all nodes less than x come

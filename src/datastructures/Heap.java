@@ -56,7 +56,7 @@ public class Heap {
   /**
    * Sinks an element down to its correct place in the heap O(lgn)
    */
-  private void maxHeapify(int index) {
+  public void maxHeapify(int index) {
     int leftChildIndex = this.getLeftChildIndex(index);
     int rightChildIndex = this.getRightChildIndex(index);
     int largestElementIndex = index;
@@ -74,19 +74,19 @@ public class Heap {
     }
   }
 
-  private int getLeftChildIndex(int index) {
+  public int getLeftChildIndex(int index) {
     return 2 * index + 1;
   }
 
-  private int getRightChildIndex(int index) {
+  public int getRightChildIndex(int index) {
     return 2 * index + 2;
   }
 
-  private int getParentIndex(int index) {
+  public int getParentIndex(int index) {
     return (int) Math.floor((index - 1) / 2);
   }
 
-  private int getElement(int index) {
+  public int getElement(int index) {
     return this.arr.get(index);
   }
 
@@ -94,7 +94,7 @@ public class Heap {
     return this.arr.size();
   }
 
-  private void swapElements(int index1, int index2) {
+  public void swapElements(int index1, int index2) {
     int temp = arr.get(index1);
     arr.set(index1, arr.get(index2));
     arr.set(index2, temp);

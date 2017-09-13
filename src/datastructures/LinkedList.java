@@ -1,9 +1,18 @@
 package datastructures;
 
-public class DoublyLinkedList<T> {
+public class LinkedList<T> {
 
-  private Node<T> head = null;
-  private Node<T> tail = null;
+  public Node<T> head = null;
+  public Node<T> tail = null;
+
+  public LinkedList() {
+  }
+
+  public LinkedList(T[] arr) {
+    for (T t : arr) {
+      this.insertLast(t);
+    }
+  }
 
   /**
    * Adds an element to the head of the list. Cases are if the list is empty or general case O(1)
@@ -147,13 +156,13 @@ public class DoublyLinkedList<T> {
   }
 
 
-  private class Node<T> {
+  public class Node<T> {
 
-    private T data;
-    private Node<T> next;
-    private Node<T> prev;
+    public T data;
+    public Node<T> next;
+    public Node<T> prev;
 
-    private Node(T data) {
+    public Node(T data) {
       this.data = data;
     }
   }

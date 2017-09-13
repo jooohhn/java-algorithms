@@ -1,7 +1,8 @@
 package ctci_ch2;
 
 
-import ctci_ch2.LinkedList.Node;
+import datastructures.LinkedList;
+import datastructures.LinkedList.Node;
 
 /**
  * Return Kth to Last: Create an algorithm to find the kth to last element of a singly linked list.

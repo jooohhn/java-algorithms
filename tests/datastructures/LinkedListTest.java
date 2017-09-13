@@ -6,9 +6,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class DoublyLinkedListTest {
+public class LinkedListTest {
 
-  private DoublyLinkedList<Integer> linkedList = new DoublyLinkedList();
+  private LinkedList<Integer> linkedList = new LinkedList();
 
   @Before
   public void beforeEach() throws Exception {

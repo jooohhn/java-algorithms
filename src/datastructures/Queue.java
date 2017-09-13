@@ -2,8 +2,8 @@ package datastructures;
 
 public class Queue<T> {
 
-  private Node<T> first = null;
-  private Node<T> last = null;
+  public Node<T> first = null;
+  public Node<T> last = null;
 
   /**
    * Adds an element to the back of the queue. Cases are if the list is empty or general case O(1)
@@ -62,12 +62,12 @@ public class Queue<T> {
     this.last = null;
   }
 
-  private class Node<T> {
+  public class Node<T> {
 
-    private T data;
-    private Node<T> prev;
+    public T data;
+    public Node<T> prev;
 
-    private Node(T data) {
+    public Node(T data) {
       this.data = data;
     }
   }

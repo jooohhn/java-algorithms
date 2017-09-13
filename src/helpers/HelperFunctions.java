@@ -20,4 +20,11 @@ public class HelperFunctions {
     return arr;
   }
 
+  public static <T> T[] getFilledArray(T[] arr, T val) {
+    for (int i = 0; i < arr.length; i++) {
+      arr[i] = val;
+    }
+    return arr;
+  }
+
 }

@@ -2,6 +2,7 @@ package ctci_ch2;
 
 import static org.junit.Assert.assertEquals;
 
+import datastructures.LinkedList;
 import org.junit.Test;
 
 public class Q2_2Test {
