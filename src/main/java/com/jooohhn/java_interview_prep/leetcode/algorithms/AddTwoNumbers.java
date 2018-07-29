@@ -6,12 +6,13 @@ package com.jooohhn.java_interview_prep.leetcode.algorithms;
  * numbers and return it as a linked list. You may assume the two numbers do not contain any leading
  * zero, except the number 0 itself.
  *
- * <p>Input: (2 -> 4 -> 3) + (5 -> 6 -> 4) Output: 7 -> 0 -> 8 Definition for singly-linked list.
+ * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4) Output: 7 -> 0 -> 8 Definition for singly-linked list.
  * public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } }
  *
- * <p>Solution: 1) Have a helper method that takes a carry 2) Calculate the value for the current
- * digit 3) Modify node.val and pass a carry if possible @Time: O(k) where k is the length of the
- * longest list @Space: O(k) Space where k is the length of the longest list
+ * Solution: 1) Have a helper method that takes a carry 2) Calculate the value for the current
+ * digit 3) Modify node.val and pass a carry if possible
+ * @Time: O(k) where k is the length of the longest list
+ * @Space: O(k) Space where k is the length of the longest list
  */
 class AddTwoNumbers {
 

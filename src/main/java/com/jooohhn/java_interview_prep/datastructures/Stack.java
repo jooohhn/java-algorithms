@@ -1,5 +1,7 @@
 package com.jooohhn.java_interview_prep.datastructures;
 
+import java.util.EmptyStackException;
+
 public class Stack<T> {
 
   Node<T> top = null;
@@ -16,9 +18,9 @@ public class Stack<T> {
   }
 
   /** Pop the top element from the stack O(1) */
-  public T pop() throws Exception {
+  public T pop()  {
     if (this.top == null) {
-      throw new Exception("Can't pop from empty stack");
+      throw new EmptyStackException();
     }
     T data = this.top.data;
     this.top = this.top.below;
@@ -26,9 +28,9 @@ public class Stack<T> {
   }
 
   /** Pop the top element from the stack O(1) */
-  public T peek() throws Exception {
+  public T peek(){
     if (this.top == null) {
-      throw new Exception("Can't peek from empty stack");
+      throw new EmptyStackException();
     }
     return this.top.data;
   }

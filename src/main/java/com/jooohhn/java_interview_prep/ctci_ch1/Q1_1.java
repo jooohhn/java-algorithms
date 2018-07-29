@@ -6,7 +6,7 @@ import java.util.HashSet;
  * Implement an algorithm to determines if a string has all unique characters. What if you cannot
  * use additional data structures?
  *
- * <p>Solution - isUnique: Add characters to a set. If character appears twice, return false
+ * Solution - isUnique: Add characters to a set. If character appears twice, return false
  * isUniqueSlow: Check each element in a nested for loop
  */
 public class Q1_1 {

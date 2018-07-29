@@ -4,9 +4,9 @@ package com.jooohhn.java_interview_prep.ctci_ch1;
  * Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are
  * set to O.
  *
- * <p>Solution - 1)
+ * Solution - 1)
  *
- * <p>Solution: Iterate through each element in the matrix, marking in a table whether it has
+ * Solution: Iterate through each element in the matrix, marking in a table whether it has
  * already been zero'd or not.
  */
 public class Q1_8 {

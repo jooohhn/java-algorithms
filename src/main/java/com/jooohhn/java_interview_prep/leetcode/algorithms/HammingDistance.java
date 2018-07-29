@@ -4,7 +4,7 @@ package com.jooohhn.java_interview_prep.leetcode.algorithms;
  * #461 (Easy) The Hamming distance between two integers is the number of positions at which the
  * corresponding bits are different. Given two integers x and y, calculate the Hamming distance.
  *
- * <p>Solution: Algorithm uses the short division by two method to divided x and y. If the remainder
+ * Solution: Algorithm uses the short division by two method to divided x and y. If the remainder
  * is is different for any iteration, then that bit position have different corresponding bit
  * values @Time: O(lgk) where k is the largest integer. This is because k can only be divided lgk
  * times @Space: O(1) no additional data structures used

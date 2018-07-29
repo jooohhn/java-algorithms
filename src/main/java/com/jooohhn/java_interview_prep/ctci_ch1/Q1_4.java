@@ -12,7 +12,8 @@ import java.util.HashMap;
 public class Q1_4 {
 
   /**
-   * Works on the fact that palindromes have at most 1 odd character count Time: O(n) Space: O(n)
+   * Works on the fact that palindromes have at most 1 odd character count
+   * Time: O(n) Space: O(n)
    */
   public static boolean isPermutationPalindrome(String str) {
     HashMap<Character, Integer> map = new HashMap<>();

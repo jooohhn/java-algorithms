@@ -7,7 +7,7 @@ import java.util.HashSet;
 /**
  * Write code to remove duplicates from an unsorted linked list.
  *
- * <p>Solution: Use a hash set to filter out repeated elements
+ * Solution: Use a hash set to filter out repeated elements
  */
 public class Q2_1 {
 

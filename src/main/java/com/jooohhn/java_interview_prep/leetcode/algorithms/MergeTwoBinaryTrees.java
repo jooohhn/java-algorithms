@@ -3,14 +3,16 @@ package com.jooohhn.java_interview_prep.leetcode.algorithms;
 /**
  * #617 (Easy)
  *
- * <p>Given two binary trees and imagine that when you put one of them to cover the other, some
+ * Given two binary trees and imagine that when you put one of them to cover the other, some
  * nodes of the two trees are overlapped while the others are not.
  *
- * <p>You need to merge them into a new binary tree. The merge rule is that if two nodes overlap,
+ * You need to merge them into a new binary tree. The merge rule is that if two nodes overlap,
  * then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be
  * used as the node of new tree.
  *
- * <p>Solution: @Time: O(k) where k is the size of the largest binary tree @Space: O(lgm) where m is
+ * Solution:
+ * @Time: O(k) where k is the size of the largest binary tree
+ * @Space: O(lgm) where m is
  * the depth of the tree. O(m) worst case if tree skewed
  */
 public class MergeTwoBinaryTrees {

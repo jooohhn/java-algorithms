@@ -6,10 +6,14 @@ import java.util.HashSet;
  * #3 (Medium) Given a string, find the length of the longest substring without repeating
  * characters.
  *
- * <p>Solution: Use a "sliding window" 1) For each character in the string, create a sliding window
- * of duplicate characters 2) If longest is reassigned, then we can assume all charcters between
- * back and front have no duplicates @Time: O(n) - Each character is visited only twice (by front
- * and back) @Space: O(n) - Uses a HashSet whose max size is legnth of string
+ * Solution: Use a "sliding window"
+ * @1) For each character in the string, create a sliding window
+ * of duplicate characters
+ * @2) If longest is reassigned, then we can assume all characters between
+ * back and front have no duplicates
+ * @Time: O(n) - Each character is visited only twice (by front
+ * and back)
+ * @Space: O(n) - Uses a HashSet whose max size is legnth of string
  */
 public class LongestSubstringWithoutRepeatingCharacters {
 

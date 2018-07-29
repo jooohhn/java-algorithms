@@ -8,7 +8,7 @@ import java.util.LinkedList;
  * robot cannot step on them. Design an algorithm to find a path for the robot from the top left to
  * the bottom right.
  *
- * <p>Solution 1) Do a depth first search-esque algorithm where each cell in the grid is explored
+ * Solution 1) Do a depth first search-esque algorithm where each cell in the grid is explored
  * recursively, ignoring invalid gridpoints 2) For each valid neighboring cell connected to the
  * current cell, push that position onto the stack and test the new neighbor 3) If a cell has no
  * valid possible path, mark that cell as false

@@ -3,7 +3,7 @@ package com.jooohhn.java_interview_prep.leetcode.algorithms;
 /**
  * #19 (Medium) Given a linked list, remove the nth node from the end of list and return its head.
  *
- * <p>Solution: @1) Send a runner out that is n distances away from the front @2) Since this is a
+ * Solution: @1) Send a runner out that is n distances away from the front @2) Since this is a
  * singly linked list, need to assign the front a dummy node @3) Have an edge case if the node to
  * delete is the head @Time: O(n) @Space: O(n)
  */

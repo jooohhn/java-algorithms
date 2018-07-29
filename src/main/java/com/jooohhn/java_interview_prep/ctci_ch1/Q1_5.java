@@ -5,7 +5,7 @@ package com.jooohhn.java_interview_prep.ctci_ch1;
  * character, or replace a character. Given two strings, write a function to check if they are one
  * edit (or zero edits) away.
  *
- * <p>Solution - 1) If characters are equal length, iterate through both strings making sure only
+ * Solution - 1) If characters are equal length, iterate through both strings making sure only
  * one character is changed 2) If characters are different lengths, iterate through both strings
  * making sure only one character is added
  */

@@ -1,5 +1,7 @@
 package com.jooohhn.java_interview_prep.datastructures;
 
+import java.util.NoSuchElementException;
+
 public class Queue<T> {
 
   public Node<T> first = null;
@@ -23,9 +25,9 @@ public class Queue<T> {
    * Removes the element at the front of the queue. Cases: the list is empty, one element queue, or
    * general case O(1)
    */
-  public T remove() throws Exception {
+  public T remove() {
     if (this.first == null) {
-      throw new Exception("Can't remove from empty queue");
+      throw new NoSuchElementException("Can't remove from empty queue");
     }
     T data = this.first.data;
     if (this.first == this.last) {
@@ -38,9 +40,9 @@ public class Queue<T> {
   }
 
   /** Removes the element at the front of the queue O(1) */
-  public T peek() throws Exception {
+  public T peek() {
     if (this.first == null) {
-      throw new Exception("Can't peek from empty queue");
+      throw new NoSuchElementException("Can't peek from empty queue");
     }
     return this.first.data;
   }

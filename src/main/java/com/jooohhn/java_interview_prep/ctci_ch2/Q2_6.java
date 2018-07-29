@@ -6,7 +6,7 @@ import com.jooohhn.java_interview_prep.datastructures.LinkedList.Node;
 /**
  * Implement a function to check if a linked list is a palindrome.
  *
- * <p>Solution: Palindromes can only have 1 character with an odd count
+ * Solution: Palindromes can only have 1 character with an odd count
  */
 public class Q2_6 {
 
